@@ -1,0 +1,7 @@
+.book-summary .summary .gitbook-link{
+	display: none !important;
+}
+.lightbox{
+	top: 50% !important;
+    transform: translate(0, -50%); 
+}

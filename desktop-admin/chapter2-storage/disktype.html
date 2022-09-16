@@ -1,0 +1,505 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.1 磁盘类型 · 产品白皮书</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ctg">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="volume_type.html" />
+    
+    
+    <link rel="prev" href="storage.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../focus.html">
+            
+                <a href="../focus.html">
+            
+                    
+                    云桌面运营后台操作手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter1-resource/">
+            
+                <a href="../chapter1-resource/">
+            
+                    
+                    1. 资源池
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1-resource/os.html">
+            
+                <a href="../chapter1-resource/os.html">
+            
+                    
+                    1.1 os资源池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1-resource/ceph.html">
+            
+                <a href="../chapter1-resource/ceph.html">
+            
+                    
+                    1.2 ceph集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                    2. 存储资源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="disktype.html">
+            
+                <a href="disktype.html">
+            
+                    
+                    2.1 磁盘类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="volume_type.html">
+            
+                <a href="volume_type.html">
+            
+                    
+                    2.2 卷类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="volume.html">
+            
+                <a href="volume.html">
+            
+                    
+                    2.3 卷
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="snapshot.html">
+            
+                <a href="snapshot.html">
+            
+                    
+                    2.4 卷快照
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter3-compute/compute.html">
+            
+                <a href="../chapter3-compute/compute.html">
+            
+                    
+                    3. 计算资源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter3-compute/host.html">
+            
+                <a href="../chapter3-compute/host.html">
+            
+                    
+                    3.1物理主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter3-compute/image_base_file.html">
+            
+                <a href="../chapter3-compute/image_base_file.html">
+            
+                    
+                    3.2镜像文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter3-compute/image.html">
+            
+                <a href="../chapter3-compute/image.html">
+            
+                    
+                    3.3基础镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter3-compute/vm_host.html">
+            
+                <a href="../chapter3-compute/vm_host.html">
+            
+                    
+                    3.4 虚拟主机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4-network/network.html">
+            
+                <a href="../chapter4-network/network.html">
+            
+                    
+                    4.网络资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter5-monitor/monitor.html">
+            
+                <a href="../chapter5-monitor/monitor.html">
+            
+                    
+                    5.监控告警
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter6-resource_assign/resource_assgin.html">
+            
+                <a href="../chapter6-resource_assign/resource_assgin.html">
+            
+                    
+                    6.资源分配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter7-question/question.html">
+            
+                <a href="../chapter7-question/question.html">
+            
+                    
+                    7.常见疑问
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.1 磁盘类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#21-&#x78C1;&#x76D8;&#x7C7B;&#x578B;"><b></b>2.1 &#x78C1;&#x76D8;&#x7C7B;&#x578B;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="21-&#x78C1;&#x76D8;&#x7C7B;&#x578B;"><a name="21-&#x78C1;&#x76D8;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#21-&#x78C1;&#x76D8;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="21-&#x78C1;&#x76D8;&#x7C7B;&#x578B;" class="plugin-anchor" href="#21-&#x78C1;&#x76D8;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 &#x78C1;&#x76D8;&#x7C7B;&#x578B;</h2>
+<p>&#x78C1;&#x76D8;&#x7C7B;&#x578B;&#x662F;&#x8FD0;&#x8425;&#x540E;&#x53F0;&#x5B9A;&#x4E49;&#x7684;&#x903B;&#x8F91;&#x89C4;&#x5219;&#xFF0C;&#x6BD4;&#x8F83;&#x5E38;&#x7528;&#x7684;&#x6709;&#x9AD8;&#x901F;&#x4E91;&#x76D8;&#x3001;&#x666E;&#x901A;&#x4E91;&#x76D8;&#x3001;&#x4F4E;&#x901F;&#x4E91;&#x76D8;&#x3001;SSD&#x9AD8;&#x901F;&#x4E91;&#x76D8;&#x7B49;&#xFF0C;&#x7ED9;&#x7528;&#x6237;&#x521B;&#x5EFA;&#x5377;&#x5FEB;&#x7167;&#x65F6;&#x6216;&#x8005;&#x521B;&#x5EFA;&#x6A21;&#x677F;&#x65F6;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x9488;&#x5BF9;&#x5B89;&#x5168;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x662F;&#x5426;&#x52A0;&#x5BC6;&#xFF0C;&#x4F46;&#x662F;&#x52A0;&#x5BC6;&#x53EA;&#x4F1A;&#x5BF9;&#x6570;&#x636E;&#x76D8;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x7CFB;&#x7EDF;&#x76D8;&#x4E0D;&#x4F1A;&#x52A0;&#x5BC6;&#xFF0C;&#x52A0;&#x5BC6;&#x4F1A;&#x5BF9;&#x6027;&#x80FD;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x5F71;&#x54CD;&#x3002;<br>&#x521B;&#x5EFA;&#x78C1;&#x76D8;&#x7C7B;&#x578B;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;IOPS&#x9650;&#x901F;&#x89C4;&#x683C;&#xFF0C;&#x78C1;&#x76D8;&#x7C7B;&#x578B;&#x7684;6&#x9879;iops&#x6307;&#x6807;&#x53EF;&#x4EE5;&#x4E0D;&#x586B;&#x5199;&#xFF0C;&#x4E0D;&#x586B;&#x5199;&#x8868;&#x793A;&#x4E0D;&#x9650;&#x901F;&#x3002;<br>&#x4E00;&#x822C;&#x586B;&#x5199;read_iops_sec&#x548C;write_iops_sec&#x5373;&#x53EF; &#xFF0C;&#x4E0D;&#x9650;&#x901F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;read_iops_sec&#x5927;&#x6982;7000&#x5DE6;&#x53F3; &#xFF0C;write_iops_sec&#x5927;&#x6982;350&#x5DE6;&#x53F3;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9700;&#x6C42;&#x586B;&#x5199;&#x76F8;&#x5E94;&#x7684;iops &#xFF0C;write_bytes_sec&#x7C7B;&#x4F3C;&#x4E8E;U&#x76D8;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x65F6;&#x7684;&#x901F;&#x5EA6;&#xFF0C;&#x6CE8;&#x610F;&#x5355;&#x4F4D;&#x662F;Bytes &#xFF0C;&#x4F8B;&#x5982;U&#x76D8;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x65F6;&#x7684;&#x901F;&#x5EA6;&#x662F;30m/s&#xFF0C;&#x90A3;&#x8FD9;&#x91CC;&#x7684;&#x6570;&#x503C;&#x5C31;&#x662F;30000000&#xFF0C;read_bytes_sec&#x662F;&#x8BFB;&#x7684;&#x901F;&#x5EA6;&#x3002;<br><strong>&#x53C2;&#x6570;&#x89E3;&#x91CA;&#xFF1A;</strong></p>
+<pre><code>read_iops_sec&#xFF1A;&#x968F;&#x673A;&#x8BFB;IOPS,&#x4E0D;&#x9650;&#x901F;&#x6700;&#x9AD8;7000&#x5DE6;&#x53F3;
+write_iops_sec&#xFF1A;&#x968F;&#x673A;&#x5199;IOPS&#xFF0C;&#x4E0D;&#x9650;&#x901F;&#x60C5;&#x51B5;&#x4E0B;&#x6700;&#x9AD8;350&#x5DE6;&#x53F3;
+total_iops_sec&#xFF1A;&#x524D;&#x9762;&#x4E24;&#x8005;&#x7684;&#x548C;
+read_bytes_sec&#xFF1A;&#x987A;&#x5E8F;&#x8BFB;&#x7684;&#x901F;&#x5EA6;&#xFF0C;&#x5373;&#x6BCF;&#x79D2;&#x8BFB;&#x53D6;&#x591A;&#x5C11;Bytes
+write_bytes_sec&#xFF1A;&#x987A;&#x5E8F;&#x5199;&#x7684;&#x901F;&#x5EA6;&#xFF0C;&#x5373;&#x6BCF;&#x79D2;&#x5199;&#x591A;&#x5C11;Bytes
+total_bytes_sec&#xFF1A;&#x524D;&#x9762;&#x4E24;&#x8005;&#x7684;&#x548C;
+</code></pre><p>&#x70B9;&#x51FB;&#x83DC;&#x5355;&#x201C;&#x5B58;&#x50A8;&#x8D44;&#x6E90;&#x201D;&#x2192;&#x201C;&#x78C1;&#x76D8;&#x7C7B;&#x578B;&#x201D;&#xFF0C;&#x70B9;&#x51FB;&#x201C;&#x65B0;&#x5EFA;&#x78C1;&#x76D8;&#x7C7B;&#x578B;&#x201D;&#xFF0C;&#x521B;&#x5EFA;&#x5373;&#x53EF;&#x3002;<br><a href="../assets/disk_type_insert_a.png" data-lightbox="8547a95d-c4a9-4855-9145-e6b107d87757" data-title=""><img src="../assets/disk_type_insert_a.png" alt=""></a></p>
+</body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="storage.html" class="navigation navigation-prev " aria-label="Previous page: 2. 存储资源">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="volume_type.html" class="navigation navigation-next " aria-label="Next page: 2.2 卷类型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.1 磁盘类型","level":"1.4.1","depth":2,"next":{"title":"2.2 卷类型","level":"1.4.2","depth":2,"path":"chapter2-storage/volume_type.md","ref":"chapter2-storage/volume_type.md","articles":[]},"previous":{"title":"2. 存储资源","level":"1.4","depth":1,"path":"chapter2-storage/storage.md","ref":"chapter2-storage/storage.md","articles":[{"title":"2.1 磁盘类型","level":"1.4.1","depth":2,"path":"chapter2-storage/disktype.md","ref":"chapter2-storage/disktype.md","articles":[]},{"title":"2.2 卷类型","level":"1.4.2","depth":2,"path":"chapter2-storage/volume_type.md","ref":"chapter2-storage/volume_type.md","articles":[]},{"title":"2.3 卷","level":"1.4.3","depth":2,"path":"chapter2-storage/volume.md","ref":"chapter2-storage/volume.md","articles":[]},{"title":"2.4 卷快照","level":"1.4.4","depth":2,"path":"chapter2-storage/snapshot.md","ref":"chapter2-storage/snapshot.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-lunr","-search","-livereload","splitter","expandable-chapters-small","anchors","anchor-navigation-ex","search-pro","lightbox"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"serif","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"lightbox":{"jquery":true},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"ctg","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"产品白皮书","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"chapter2-storage/disktype.md","mtime":"2019-05-17T02:15:16.930Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-11T03:33:03.788Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
